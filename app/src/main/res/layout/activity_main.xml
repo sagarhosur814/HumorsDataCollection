@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<include
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    layout="@layout/main_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="20dp"
+
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:background="#398AD5"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/connect"/>
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:background="#d63031"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/disconnect"/>
+        <Button
+            android:id="@+id/take_reading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:background="#398AD5"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/take_reading"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="100dp">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/pushToServer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#398AD5"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/sumbit_data"/>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#398AD5"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/exit"/>
+
+        <Button
+            android:id="@+id/btn_set_device"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#398AD5"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/my_devices" />
+
+        <Button
+            android:id="@+id/downloadExcell"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#398AD5"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/download_excel"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
+            android:background="#398AD5"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/clear"/>
+
+        <Button
+            android:id="@+id/btn_history"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#398AD5"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/test_history"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

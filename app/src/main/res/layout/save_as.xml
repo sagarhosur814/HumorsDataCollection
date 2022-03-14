@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#398AD5"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Save as"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingHorizontal="20dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText1"
+            android:background="@drawable/data_input_bg"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter file name" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="#2ecc71"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Save" />
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="#e74c3c"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Cancel" />
+</LinearLayout>
+
+
+
+</LinearLayout>

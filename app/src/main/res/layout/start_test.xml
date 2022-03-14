@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_send_at_the_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_inactive"
+        android:drawableLeft="@drawable/ic_blow1"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="15dp"
+        android:text="@string/lets_start"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+
+
+</RelativeLayout>

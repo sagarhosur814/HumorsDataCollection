@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TakeReading">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        tools:ignore="ScrollViewSize,UselessParent">
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginVertical="10dp"
+                    android:text="@string/add_patient_data"
+                    android:layout_gravity="center"
+                    style="@style/MontserratBold"
+                    android:textSize="16sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/et_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:background="@drawable/data_input_bg"
+                        android:hint="@string/enter_your_name"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@drawable/data_input_bg"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/select_your_gender"
+                            android:textColor="@color/gradientDarkColor" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="Male" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/et_age"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="52dp"
+                                android:inputType="number"
+                                android:textColorHint="@color/gradientDarkColor"
+                                android:textColor="@color/gradientDarkColor"
+                                android:textStyle="bold"
+                                android:background="@drawable/data_input_bg"
+                                android:paddingHorizontal="15dp"
+                                app:suffixTextColor="@color/black"
+                                style="@style/PoppinsRegular"
+                                android:hint="@string/age"/>
+                        </FrameLayout>
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="0dp"/>
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/et_height"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="52dp"
+                                android:inputType="text"
+                                android:textColorHint="@color/gradientDarkColor"
+                                android:textColor="@color/gradientDarkColor"
+                                android:textStyle="bold"
+                                android:background="@drawable/data_input_bg"
+                                android:paddingHorizontal="15dp"
+                                app:suffixTextColor="@color/black"
+                                style="@style/PoppinsRegular"
+                                android:hint="Height"/>
+                            <TextView
+                                android:textColor="@color/black"
+                                android:text="Feet"
+                                android:textSize="12sp"
+                                style="@style/PoppinsMedium"
+                                android:layout_gravity="end|center_vertical"
+                                android:layout_marginEnd="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </FrameLayout>
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="0dp"/>
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/et_weight"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="52dp"
+                                android:inputType="text"
+                                android:textColorHint="@color/gradientDarkColor"
+                                android:textColor="@color/gradientDarkColor"
+                                android:textStyle="bold"
+                                android:background="@drawable/data_input_bg"
+                                android:paddingHorizontal="15dp"
+                                style="@style/PoppinsRegular"
+                                android:hint="@string/weight"/>
+                            <TextView
+                                style="@style/PoppinsMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:layout_marginEnd="12dp"
+                                android:text="@string/kgs"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_height="wrap_content">
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_daily_water"
+                                style="@style/PoppinsRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="52dp"
+                                android:background="@drawable/data_input_bg"
+                                android:gravity="center_vertical"
+                                android:hint="@string/water"
+                                android:inputType="number"
+                                android:paddingHorizontal="15dp"
+                                android:textColor="@color/gradientDarkColor"
+                                android:textColorHint="@color/gradientDarkColor"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:text="@string/Ltr"
+                                android:textSize="12sp"
+                                style="@style/PoppinsMedium"
+                                android:layout_gravity="end|center_vertical"
+                                android:layout_marginEnd="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/data_input_bg">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gradientDarkColor"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/consume_alcohol"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupAlcohol"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radioButtonAlcoholRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/regularly"/>
+                            <RadioButton
+                                android:id="@+id/radioButtonAlcoholOccation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/occasionally"/>
+                            <RadioButton
+                                android:id="@+id/radioButtonAlcoholFemaleNever"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/never"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/data_input_bg">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gradientDarkColor"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/smoking"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupSmoke"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radioSmokingRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/regularly"/>
+                            <RadioButton
+                                android:id="@+id/radioSmokingOccation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/occasionally"/>
+                            <RadioButton
+                                android:id="@+id/radioSmokingNever"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/never"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/data_input_bg">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gradientDarkColor"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/excr"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupExcr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <RadioButton
+                                android:id="@+id/radioExc1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/regular_workout_5_7_times_a_week"/>
+                            <RadioButton
+                                android:id="@+id/radioExc2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/moderate_workout_2_3_times_a_week"/>
+                            <RadioButton
+                                android:id="@+id/radioExc3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/never"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/data_input_bg">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gradientDarkColor"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/consume_med"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupMedicine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radioButtonMedicineYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/yes"/>
+                            <RadioButton
+                                android:id="@+id/radioButtonMedicineNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/no"/>
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:layout_marginBottom="20dp"
+                            android:id="@+id/et_medicine_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:elevation="0dp"
+                            android:visibility="gone"
+                            android:paddingHorizontal="15dp"
+                            android:textColorHint="@color/gradientDarkColor"
+                            android:textColor="@color/gradientDarkColor"
+                            android:textStyle="bold"
+                            android:inputType="text"
+                            style="@style/PoppinsRegular"
+                            android:hint="@string/enter_medicine_description"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/data_input_bg"
+                        android:elevation="0dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/past_medical_history"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            style="@style/PoppinsRegular"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <CheckBox
+                            android:id="@+id/none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/none"
+                            android:fontFamily="@font/poppins"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <CheckBox
+                            android:id="@+id/diabates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/diabetes"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginStart="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:id="@+id/kidney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kidney"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginStart="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <CheckBox
+                            android:id="@+id/liver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/liver_diseases"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginStart="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:id="@+id/lungs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lungs_diseases"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginStart="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/et_disease_desc"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:inputType="text"
+                            android:textColorHint="@color/gradientDarkColor"
+                            android:textColor="@color/gradientDarkColor"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="15dp"
+                            android:paddingHorizontal="15dp"
+                            style="@style/PoppinsRegular"
+                            android:hint="@string/enter_disease_in_description"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="15dp"
+                        android:background="@drawable/data_input_bg">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gradientDarkColor"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/did_you_consume_water_or_food_in_last_hour"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupFoodWater"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radioFoodWaterYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/yes"/>
+                            <RadioButton
+                                android:id="@+id/radioFoodWaterNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="@string/no"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/add_data_next_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:text="Next"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins_medium"
+                            android:background="@drawable/btn_inactive"
+                            android:src="@drawable/ic_ar_r"
+                            app:tint="@color/white"
+                            android:contentDescription="@string/todo" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--            /////////////////// second layout-->
+    <LinearLayout
+        android:id="@+id/atTheRate"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:paddingVertical="20dp"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+<Button
+    android:id="@+id/btn_send_signal"
+    android:layout_width="wrap_content"
+    android:background="@drawable/btn_ready1"
+    android:paddingHorizontal="20dp"
+    android:textColor="@color/white"
+    android:layout_height="40dp"
+    android:text="@string/take_reading"/>
+    </LinearLayout>
+
+
+    <!--            /////////////////// second layout-->
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/animation_view"
+            app:lottie_fileName="take_breath.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/take_a_deep_breath"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/timer_breath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!--            /////////////////// third layout-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/animation_view1"
+            app:lottie_fileName="loading.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_result"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/myresult"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test result"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

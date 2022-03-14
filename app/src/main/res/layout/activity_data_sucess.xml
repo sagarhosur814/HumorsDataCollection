@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataSucess">
+
+
+    <include layout="@layout/main_toolbar3" />
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="ScrollViewSize,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#3498db"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ankur Jaiswal"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/age_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Male, 36"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Acetone"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/ace"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Ammonia"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/ammonia"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Benzene"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/benz"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Toluene"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/tolune"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="H2S"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/h2s"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Ethanol"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/ethanol"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Hydrogen"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/hydrozen"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Butane"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/butane"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Methane"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/methane"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Carbon \n Monoxide"
+                            android:paddingHorizontal="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/text_bg"
+                            android:textColor="@color/white"/>
+
+
+                        <TextView
+                            android:id="@+id/co"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="333.00"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:textColor="#d63031"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/hum"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="Humidity : 87"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="2dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/item_bg"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/temp"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="Temp : 36"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="2dp"
+                        android:gravity="center"
+                        android:background="@drawable/item_bg"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/blow"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="Blow : 1260"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="2dp"
+                        android:gravity="center"
+                        android:background="@drawable/item_bg"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:layout_height="100dp">
+                 <Button
+                     android:id="@+id/btn_move_to_main"
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:text="@string/take_test_again"
+                     android:background="@drawable/btn_red"
+                     android:textColor="@color/white"
+                     android:textAllCaps="false"
+                     android:paddingHorizontal="30dp"/>
+             </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
